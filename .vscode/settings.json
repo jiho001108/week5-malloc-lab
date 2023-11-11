@@ -2,6 +2,7 @@
     "makefile.launchConfigurations": [
         {
             "cwd": "/home/ubuntu/week5/week5-malloc-lab",
+            "MIMode": "gdb",
             "binaryPath": "/home/ubuntu/week5/week5-malloc-lab/mdriver",
             "binaryArgs": []
         }

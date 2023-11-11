@@ -4,15 +4,14 @@
     // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
     "version": "0.2.0",
     "configurations": [
-        
         {
-            "name": "(gdb) 시작",
+            "name": "(gdb) 디버그 시작",
             "type": "cppdbg",
             "request": "launch",
-            "program": "프로그램 이름 입력(예: ${workspaceFolder}/a.out)",
+            "program": "/home/ubuntu/week5/week5-malloc-lab/mdriver",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${fileDirname}",
+            "cwd": "/home/ubuntu/week5/week5-malloc-lab/",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
@@ -27,8 +26,9 @@
                     "text": "-gdb-set disassembly-flavor intel",
                     "ignoreFailures": true
                 }
-            ]
+            ],
+            "preLaunchTask": "build my project", // Makefile을 통한 빌드
+            "miDebuggerPath": "/usr/bin/gdb" // gdb 경로
         }
-
     ]
 }
